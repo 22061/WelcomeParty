@@ -6,6 +6,8 @@ namespace Trialkit
   {
     pinMode(2, OUTPUT);
     pinMode(3, OUTPUT);
+
+    delay(3000);
   }
 
   void Car::right_wheel(String state)

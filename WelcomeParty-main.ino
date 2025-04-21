@@ -2,20 +2,20 @@
 
 Trialkit::Car car;
 
-void setup()
+void setup()  //起動したときに一度だけ実行される
 {
   car.setup();
 }
 
-void loop()
+void loop()  //最後まで終わるとまた最初から繰り返される
 {
-  car.right_wheel("ON");
-  car.left_wheel("ON");
+  car.right_wheel("ON");  //右のタイヤが動く
+  car.left_wheel("ON");  //左のタイヤが動く
   
-  delay(1000);
+  delay(5000);  //その状態を1000ミリ秒(1秒)続ける
 
-  car.right_wheel("OFF");
-  car.left_wheel("OFF");
+  car.right_wheel("OFF");  //右のタイヤが止まる
+  car.left_wheel("OFF");  //左のタイヤが止まる
 
-  delay(1000);
+  delay(5000);  //その状態を1000ミリ秒(1秒)続ける
 }
